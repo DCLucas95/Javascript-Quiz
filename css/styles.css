@@ -19,3 +19,7 @@ h1 {
 p {
     font-size: x-large;
 }
+
+.nobullet {
+    list-style-type: none
+}
