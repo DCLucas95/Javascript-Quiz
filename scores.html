@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
+
 <body>
 
-    
-<hr>
 
-<!--Scores to be displayed here somehow-->
-<div id="wrapper">
+    <hr>
 
-    <h1>High Scores</h1>
-    <br>
-
-<button type="button" class="btn btn-dark clearScores">Clear Scores</button>
-
-<a class="btn btn-dark" href="./index.html" role="button">Try Again</a>
-    
-</div>
+    <!--Scores to be displayed here somehow-->
+    <div id="wrapper">
+        <div id="scoreBackground">
+        <h1>High Scores</h1>
+        <br>
+        <div id="name"></div>
+        <div id="score"></div>
+    </div>
 
 
-<script src="./script/highscore.js"></script>
-<script src="./script/script.js"></script>
+    <button type="button" class="btn btn-dark clearScores">Clear Scores</button>
+
+    <a class="btn btn-dark" href="./index.html" role="button">Try Again</a>
+
+    </div>
+
+
+    <script src="./script/highscore.js"></script>
+    <script src="./script/script.js"></script>
 </body>
+
 </html>

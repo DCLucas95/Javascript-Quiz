@@ -1,3 +1,5 @@
+var playerName
+
 getPlayerName();
 
 function getPlayerName() {
@@ -6,9 +8,12 @@ localStorage.setItem("playerName", playerName)
 }
 
 //Show High Scores
+displayHighscores();
 
-
-
+function displayHighscores() {
+    document.getElementById("name").innerHTML = localStorage.getItem("playerName");
+    document.getElementById("score").innerHTML = localStorage.getItem("score");
+  }
 
 //button to clear local storage
 var clearScores = document.querySelector(".clearScores")
