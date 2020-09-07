@@ -12,8 +12,12 @@ var playerName = prompt ("What is your name?")
 //retrieve score and use input from prompt to get name
 
 //button to clear local storage
-var startButton = document.querySelector(".clearScores")
+var clearScores = document.querySelector(".clearScores")
 
-//button to loop back to try quiz again
-var startButton = document.querySelector(".clearScores")
+clearScores.addEventListener("click", clearLocalStorage);
+
+function clearLocalStorage(){
+    window.localStorage.clear();
+    console.log("scores cleared")
+}
   

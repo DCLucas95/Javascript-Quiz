@@ -17,7 +17,7 @@ var answer4 = document.querySelector('#answer4');
 
 //countdown timer
 var countdowntimer
-var secondsLeft = 60;
+var secondsLeft = 90;
 
 function startTimer() {
 
@@ -60,11 +60,16 @@ function selectAnswer(answerNumber) {
   if (questionObject.correct === answerNumber) {
     console.log('answer is correct!');
     document.getElementById("score").innerHTML = score+=10;
+
+    //sound and glash green
   } else {
-    console.log('answer is wrong!');
+    console.log('answer is incorrect!');
     secondsLeft -=10
+    //sound and flash red
+    //JSON stringify score and putinto session storage
   }
   console.log(currentQuestion, questions.length);
+
   // display next question if there is one
   if (currentQuestion >= questions.length - 1) {
     console.log('that was the last question');
@@ -74,6 +79,5 @@ function selectAnswer(answerNumber) {
     renderQuestion();
   }
 }
-
 
 
