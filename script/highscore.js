@@ -1,4 +1,3 @@
-
 getPlayerName();
 
 function getPlayerName() {
@@ -20,4 +19,5 @@ function clearLocalStorage(){
     window.localStorage.clear();
     console.log("scores cleared")
 }
+
   
