@@ -1,6 +1,8 @@
 //Source of questions for the quiz
 var questions = quizQuestions
 
+//score
+var score = 0;
 
 //Identifier of button to start the quiz
 var startButton = document.querySelector(".startButton")
@@ -11,6 +13,7 @@ var questionHtml = document.querySelector('#question');
 var answer1 = document.querySelector('#answer1');
 var answer2 = document.querySelector('#answer2');
 var answer3 = document.querySelector('#answer3');
+var answer4 = document.querySelector('#answer4');
 
 //countdown timer
 var countdowntimer
@@ -26,7 +29,7 @@ function startTimer() {
     var showTimer = document.getElementById("countdownTimer");
     showTimer.textContent = secondsLeft
     
-    if(secondsLeft === 0) {
+    if(secondsLeft <= 0) {
       clearInterval(countdowntimer);
       window.location.href = "scores.html";
     }
@@ -56,10 +59,10 @@ function selectAnswer(answerNumber) {
 
   if (questionObject.correct === answerNumber) {
     console.log('answer is correct!');
-    //score ++
+    document.getElementById("score").innerHTML = score+=10;
   } else {
     console.log('answer is wrong!');
-    secondsLeft -=5
+    secondsLeft -=10
   }
   console.log(currentQuestion, questions.length);
   // display next question if there is one
@@ -71,4 +74,6 @@ function selectAnswer(answerNumber) {
     renderQuestion();
   }
 }
+
+
 

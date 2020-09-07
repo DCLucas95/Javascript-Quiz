@@ -8,7 +8,7 @@ answers: [
 "<scripting>",
 "<script>"
 ],
-correctAnswer: "3"
+correct: 3
 },
 
 
@@ -19,7 +19,7 @@ answers: [
 "function myFunction()",
 "function:myFunction()"
 ],
-correctAnswer: "0"
+correct: 0
 },
 
 
@@ -31,7 +31,7 @@ answers: [
 "if i==5 then",
 "if i=5"
 ],
-correctAnswer: "0"
+correct: 0
 },
 
 
@@ -43,7 +43,7 @@ answers: [
 "if (i<>5)",
 "if i=!5 then"
 ],
-correctAnswer: 1
+correct: 1
 },
 
 
