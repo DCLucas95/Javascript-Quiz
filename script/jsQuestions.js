@@ -17,7 +17,8 @@ question:"How do you create a function in JavaScript?",
 answers: [
 "function = myFunction()",
 "function myFunction()",
-"function:myFunction()"
+"function:myFunction()",
+"createFunction()",
 ],
 correct: 0
 },
@@ -74,7 +75,8 @@ question:"How can you detect the client's browser name?",
 answers: [
 "navigator.appName",
 "browser.name",
-"client.navName"
+"client.navName",
+"client.browser"
 ],
 correct: 0
 },
@@ -97,7 +99,8 @@ question:"How do you declare a JavaScript variable?",
 answers: [
 "var carName;",
 "v carName;",
-"variable carName"
+"variable carName",
+"carName variable"
 ],
 correct: 0
 },

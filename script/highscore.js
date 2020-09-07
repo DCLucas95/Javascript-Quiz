@@ -3,13 +3,13 @@ getPlayerName();
 
 function getPlayerName() {
 var playerName = prompt ("What is your name?")
-//local storage this
-
+localStorage.setItem("playerName", playerName)
 }
 
 //Show High Scores
 
-//retrieve score and use input from prompt to get name
+
+
 
 //button to clear local storage
 var clearScores = document.querySelector(".clearScores")

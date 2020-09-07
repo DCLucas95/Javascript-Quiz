@@ -21,6 +21,8 @@ var secondsLeft = 90;
 
 function startTimer() {
 
+  document.getElementById('startMenu').innerHTML = ("")
+  
   renderQuestion();
 
   countdowntimer = setInterval(function() {
@@ -38,6 +40,8 @@ function startTimer() {
 
 //Button to start Quiz and Timer
 startButton.addEventListener("click", startTimer);
+
+//document.getElementById('startMenu').innerHTML = renderQuestion()
 
 // this function will display question and possible answers
 function renderQuestion() {
@@ -60,13 +64,13 @@ function selectAnswer(answerNumber) {
   if (questionObject.correct === answerNumber) {
     console.log('answer is correct!');
     document.getElementById("score").innerHTML = score+=10;
+    localStorage.setItem("score", score);
+    //JSON.stringify(score);
+  }
 
-    //sound and glash green
-  } else {
+   else {
     console.log('answer is incorrect!');
     secondsLeft -=10
-    //sound and flash red
-    //JSON stringify score and putinto session storage
   }
   console.log(currentQuestion, questions.length);
 
