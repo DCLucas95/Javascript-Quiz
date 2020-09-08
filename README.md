@@ -1,5 +1,5 @@
 # Title
-<p>Week-4 Javascript Quiz/p>
+<p>Week-4 Javascript Quiz</p>
 
 # Contents
 <p>Please visit the site hosted on Github to see working HTML, CSS and Javascript at:
