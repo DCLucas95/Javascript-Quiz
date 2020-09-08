@@ -3,7 +3,7 @@ var playerName
 getPlayerName();
 
 function getPlayerName() {
-var playerName = prompt ("What is your name?")
+var playerName = prompt ("Please input your initials")
 localStorage.setItem("playerName", playerName)
 }
 
