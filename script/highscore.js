@@ -7,6 +7,12 @@ var playerName = prompt ("Please input your initials")
 localStorage.setItem("playerName", playerName)
 }
 
+while (playerName = null) {
+  alert("Please input your initials to have your score displayed");
+  var playerName = prompt ("Please input your initials")
+  localStorage.setItem("playerName", playerName)
+}
+
 //Show High Scores
 displayHighscores();
 

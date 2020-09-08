@@ -41,8 +41,6 @@ function startTimer() {
 //Button to start Quiz and Timer
 startButton.addEventListener("click", startTimer);
 
-//document.getElementById('startMenu').innerHTML = renderQuestion()
-
 // this function will display question and possible answers
 function renderQuestion() {
   var questionObject = questions[currentQuestion];
@@ -65,18 +63,15 @@ function selectAnswer(answerNumber) {
     console.log('answer is correct!');
     document.getElementById("score").innerHTML = score+=10;
     localStorage.setItem("score", score);
-    //JSON.stringify(score);
   }
 
    else {
     console.log('answer is incorrect!');
     secondsLeft -=10
   }
-  console.log(currentQuestion, questions.length);
 
   // display next question if there is one
   if (currentQuestion >= questions.length - 1) {
-    console.log('that was the last question');
     window.location.href = "scores.html";
   } else {
     currentQuestion++;

@@ -3,19 +3,19 @@
 
 # Contents
 <p>Please visit the site hosted on Github to see working HTML, CSS and Javascript at:
-https://dclucas95.github.io/javascript-quiz/</p>
+https://dclucas95.github.io/Javascript-Quiz/</p>
 
 
 # Images
 
 ![image](https://user-images.githubusercontent.com/69066157/92422404-9b50cc80-f1c0-11ea-9368-a7d78d7c887a.png)
--Inital screen with instructions for the game
+<p>-Inital screen with instructions for the game</p>
 
 ![image](https://user-images.githubusercontent.com/69066157/92422443-ca673e00-f1c0-11ea-8f83-b624b18b778d.png)
--Screen showing the quiz in progress and the score counter and timer in the top left of the screen
+<p>-Screen showing the quiz in progress and the score counter and timer in the top left of the screen</p>
 
 ![image](https://user-images.githubusercontent.com/69066157/92422475-eb2f9380-f1c0-11ea-8c12-387b201ac40c.png)
--High score screen with initials input after prompt and score displayed
+<p>-High score screen with initials input after prompt and score displayed</p>
 
 
 
