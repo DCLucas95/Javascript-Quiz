@@ -1,21 +1,13 @@
 var playerName
 
 getPlayerName();
-
 function getPlayerName() {
 var playerName = prompt ("Please input your initials")
 localStorage.setItem("playerName", playerName)
 }
 
-while (playerName = null) {
-  alert("Please input your initials to have your score displayed");
-  var playerName = prompt ("Please input your initials")
-  localStorage.setItem("playerName", playerName)
-}
-
 //Show High Scores
 displayHighscores();
-
 function displayHighscores() {
     document.getElementById("name").innerHTML = localStorage.getItem("playerName");
     document.getElementById("score").innerHTML = localStorage.getItem("score");
